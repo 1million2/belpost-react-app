@@ -1,0 +1,12 @@
+.page3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 35px;
+  padding: 60px 55px;
+}
+.back {
+  width: 62px;
+  height: 40px;
+  background-color: chocolate;
+}

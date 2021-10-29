@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 73px;
+  padding: 18px 60px 14px 60px;
+  background-color: #009DE9;
+  color: #fff;
+  font-size: 30px;
+}
+.header div {
+  display: flex;
+}

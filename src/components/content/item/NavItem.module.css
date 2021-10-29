@@ -1,0 +1,23 @@
+.item {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 25px 35px 25px;
+  background-color: #fff;
+  box-shadow: 2px 11px 16px rgba(100, 105, 108, 0.24);
+  border-radius: 45px;
+  color: #2B2E2D;
+}
+.img {
+  width: 80px;
+  height: 70px;
+}
+.itemText {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: right;
+}

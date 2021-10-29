@@ -1,0 +1,18 @@
+.page2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 35px;
+  padding: 60px 55px;
+  background: url(./bcg-page2.png) no-repeat 0 0;
+}
+.back {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 62px;
+  height: 40px;
+  background-color: chocolate;
+
+}
