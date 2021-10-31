@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import classes from "./Page3.module.css";
 // импорт картинки для элементов второй страницы
 
