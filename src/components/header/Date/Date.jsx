@@ -6,7 +6,7 @@ const Date = () =>  {
   let date = moment().locale("ru");
   
   return (
-    <div className={classes.date}>{ date.format("DD MMMM YYYY") }</div>
+    <div className={classes.date}>{ date.format("D MMMM YYYY") }</div>
   );
 }
 

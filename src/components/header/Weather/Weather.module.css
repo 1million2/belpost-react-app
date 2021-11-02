@@ -1,0 +1,6 @@
+.tempVal {
+  transition: 1s;
+}
+.tempVal p {
+  min-width: 55px;
+}

@@ -10,9 +10,5 @@
 .back {
   position: absolute;
   right: 0;
-  top: 0;
-  width: 62px;
-  height: 40px;
-  background-color: chocolate;
-
+  top: 5px;
 }

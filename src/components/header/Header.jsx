@@ -5,6 +5,7 @@ import Weather from "./Weather/Weather";
 import Date from "./Date/Date";
 
 const Header = () =>  {
+
   return (
     <div className={classes.header}>
       <div>
