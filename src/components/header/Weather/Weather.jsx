@@ -4,7 +4,9 @@ import classes from "./Weather.module.css";
 
 const Weather = () => {
 
-  const [temp, getApi] = useState();
+  const [temp, getTemp] = useState();
+  const[isLoad, setIsLoad] = useState(false);
+  const [error, setError] = useState();
 
   useEffect(() => {
 
@@ -17,19 +19,26 @@ const Weather = () => {
       .then(res => res.json())
       .then((res) => {
         res = `${Math.ceil(res.main.temp)}˚C`
-        getApi(res)
+        getTemp(res)
+        setIsLoad(true);
       },
         (error) => {
-          error = error.message
-          getApi(error);
+          setIsLoad(true);
+          setError(error)
         })
-  })
+  },[])
+  if (error) {
+    return <p>Ошибка: {error.message}</p>
+  }
+  else if (!isLoad) {
+    return <p>Загрузка...</p>
+  }
   return (
-    <div className={classes.tempVal}>
-      <p>{temp}</p>
-      <Weathericon />
-    </div>
-  )
+      <div className={classes.tempVal}>
+        <p>{temp}</p>
+        <Weathericon />
+      </div>
+    )
 
 }
 
